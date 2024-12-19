@@ -2,53 +2,54 @@
 @use 'hero';
 
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
 
 body {
-	background: variaveis.$corDeFundo;
+  background: variaveis.$corDeFundo;
 }
 
-@mixin text($fontSize: 16px) {
-	font-size: $fontSize;
-	line-height: $fontSize + 10px;
-	color: variaveis.$corTextoPrincipal;
+@mixin text ($fontSize: 16px){
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+  color: variaveis.$corTextoPrincipal;
 }
 
-@mixin title($fontSize: 40px) {
-	@include text($fontSize);
-	color: variaveis.$corTextoSecundario;
+@mixin title($fontSize: 40px){
+  @include text($fontSize);
+  color: variaveis.$corTextoSecundario;
 }
 
 .text--big {
-	@include text(18px);
+  @include text(18px);
 }
 
 .text {
-	@include text;
+  @include text;
 }
 
 .text--small {
-	@include text(12px);
+  @include text(12px);
 }
 
 .title--big {
-	@include title(44px);
+  @include title(44px);
 }
 
 .title {
-	@include title;
+  @include title(40px)
 }
 
 .title--small {
-	@include title(28px);
+  @include title(28px)
 }
 
 .link-text {
-	@include text(18px);
-	color: variaveis.$corTextoSecundario;
+  @include text(18px);
+  color: variaveis.$corTextoSecundario;
+  text-decoration: underline;
 }
