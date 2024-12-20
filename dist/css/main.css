@@ -44,6 +44,41 @@
   margin-bottom: 8px;
 }
 
+.shows {
+  padding: 2vw 5.6vw;
+}
+.shows__list {
+  margin-top: 44px;
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+}
+.shows__list--is-active {
+  display: grid;
+}
+.shows__list__item img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.shows__tabs {
+  display: flex;
+  justify-content: center;
+}
+.shows__tabs__button {
+  color: #f9f9f9;
+  font-size: 20px;
+  border: none;
+  padding-bottom: 5px;
+  background: none;
+  text-transform: uppercase;
+  margin: 0 1vw;
+  cursor: pointer;
+  border-bottom: 5px solid transparent;
+}
+.shows__tabs__button--is-active {
+  border-color: #f9f9f9;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(../../assets/fonts/Avenir-Regular.woff2);
@@ -58,11 +93,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Avenir, sans-serif;
 }
 
 body {
   background: #040714;
-  font-family: Avenir, sans-serif;
 }
 
 .text--big {
