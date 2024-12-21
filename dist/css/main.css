@@ -101,6 +101,22 @@
   text-align: center;
 }
 
+.watch-anywhere {
+  padding: 5.6vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.watch-anywhere img {
+  max-width: 100%;
+}
+.watch-anywhere__text_container {
+  padding: 0 2vw;
+}
+.watch-anywhere__text_container h2 {
+  margin-bottom: 24px;
+}
+
 @font-face {
   font-family: Avenir;
   src: url(../../assets/fonts/Avenir-Regular.woff2);
