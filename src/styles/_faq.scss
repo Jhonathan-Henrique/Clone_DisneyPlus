@@ -1,0 +1,29 @@
+.faq {
+  padding: 5.6vw;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+
+  &__questions {
+
+    &__item {
+      background: #13151d;
+      margin-bottom: 16px;
+
+      &__question {
+        color: #fff;
+        font-size: 20px;
+        padding: 24px;
+        display: block;
+        cursor: pointer;
+      }
+
+      &__answer {
+        padding: 24px;
+      }
+    }
+  }
+}
+
