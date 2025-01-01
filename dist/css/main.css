@@ -144,9 +144,32 @@
   padding: 24px;
   display: block;
   cursor: pointer;
+  position: relative;
+}
+.faq__questions__item__question::after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 40px;
 }
 .faq__questions__item__answer {
+  height: 0;
+  overflow: hidden;
+  padding: 0 24px;
+  transition: height, 0.5s ease;
+}
+.faq__questions__item--is-open .faq__questions__item__question::after {
+  content: "-";
+}
+.faq__questions__item--is-open .faq__questions__item__answer {
+  height: auto;
   padding: 24px;
+  padding-bottom: 24px;
+  transition: height, 0.5s ease;
 }
 
 @font-face {
